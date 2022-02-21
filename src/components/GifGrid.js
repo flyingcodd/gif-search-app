@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
-import { getGifs } from "../helpers/getGifs";
+import React from "react";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import { GifGridItem } from "./GifGridItem";
 
