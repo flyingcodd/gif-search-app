@@ -1,26 +1,34 @@
 import React, { useState } from 'react';
+import { GifGrid } from './components/GifGrid';
 import { AddCategory } from './components/AddCategory';
-import { GifGird } from './components/GifGrid';
 
-export const GiftSearchApp=()=>{
+
+export const GiftSearchApp = () => {
+
     //const categories = ['One Piece','Naruto','Dragon Ball'];
     const [categories,setCategories]= useState(['One Piece']);
     /*const handleAdd = ()=>{
         //setCategories(['Attack on Titan',...Categories]);
         setCategories(cats => ['Attack on Titan',...cats]);
     }*/
-    return (
+
+    return(
         <div>
-            <h2>GiftSearchApp</h2>
-            <br/>
-            <AddCategory setCategories={setCategories}></AddCategory>
+            <h2>GifSearchApp</h2>
+            <hr/>
+            
+            <AddCategory setCategories={setCategories}/>
             <ol>
                 {
-                    categories.map( category=>(
-                         <GifGird key={category} category={category}></GifGird>
-                    ))
+                 categories.map((category)=> (
+                     <GifGrid
+                     key = {category}
+                     category={category}
+                     />
+                 ))
                 }
             </ol>
         </div>
     );
-}
+    
+};
