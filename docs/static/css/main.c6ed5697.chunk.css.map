@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,EACE,yCACF,CACA,KACE,YACF","file":"main.c6ed5697.chunk.css","sourcesContent":["*{\n  font-family: 'Times New Roman', Times, serif;\n}\nbody{\n  padding: 60px;\n}\n"]}
